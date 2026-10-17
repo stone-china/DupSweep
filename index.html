@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DupSweep Privacy Policy</title>
+<meta name="description" content="Privacy policy for DupSweep, a fully offline duplicate file finder for Windows.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1f2328;
+    --muted: #59636e;
+    --rule: #d8dee4;
+    --accent: #0b62c4;
+    --panel: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9198a1;
+      --rule: #30363d;
+      --accent: #6cb6ff;
+      --panel: #161b22;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 "Segoe UI", system-ui, -apple-system, "Microsoft YaHei",
+          "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  }
+  main { max-width: 820px; margin: 0 auto; }
+  header.site {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 2rem;
+  }
+  .brand { font-weight: 650; font-size: 1.15rem; letter-spacing: .01em; }
+  .brand span { color: var(--muted); font-weight: 400; margin-left: .5rem; }
+  nav.langs { display: flex; gap: .5rem; }
+  nav.langs button {
+    font: inherit;
+    font-size: .9rem;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: .25rem .8rem;
+    cursor: pointer;
+  }
+  nav.langs button:hover { color: var(--fg); border-color: var(--muted); }
+  nav.langs button[aria-pressed="true"] {
+    color: #fff;
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  article { max-width: 70ch; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.1rem 0 .6rem;
+    padding-top: .2rem;
+  }
+  p { margin: .6rem 0; }
+  ul { margin: .5rem 0 .8rem; padding-left: 1.4rem; }
+  li { margin: .35rem 0; }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0 0 1.6rem; }
+  .summary {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin: 1.4rem 0 0;
+  }
+  .summary p { margin: .3rem 0; }
+  code {
+    font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
+    font-size: .92em;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: .05em .35em;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  a { color: var(--accent); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <header class="site">
+    <div class="brand">DupSweep<span>Privacy Policy</span></div>
+    <nav class="langs" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="zh-CN" aria-pressed="false">简体中文</button>
+      <button type="button" data-lang="zh-TW" aria-pressed="false">繁體中文</button>
+    </nav>
+  </header>
+
+  <!-- English -->
+  <article data-lang="en">
+    <h1>DupSweep Privacy Policy</h1>
+    <p class="meta">Last updated: 17 October 2026 &middot; Publisher: stone.china</p>
+
+    <div class="summary">
+      <p><strong>In short:</strong> DupSweep finds duplicate files on your own
+      device. It does not collect, transmit, sell or share personal data, and it
+      does not connect to any network.</p>
+    </div>
+
+    <h2>1. Scope</h2>
+    <p>This policy covers the DupSweep Windows application distributed through
+    the Microsoft Store, in all of its language versions, and the data the
+    application processes and stores on your device. It does not cover the
+    Microsoft Store itself, which is operated by Microsoft.</p>
+
+    <h2>2. Data we do not collect</h2>
+    <ul>
+      <li>No telemetry, analytics, crash reports or usage statistics.</li>
+      <li>No account, sign-in, name, email address or advertising identifier.</li>
+      <li>No file names, file contents, file hashes or folder names are sent
+      anywhere.</li>
+      <li>No advertising, tracking or analytics SDKs are included.</li>
+    </ul>
+    <p>We receive no data from DupSweep and therefore hold no personal data
+    about you.</p>
+
+    <h2>3. Data processed on your device</h2>
+    <p>To find duplicates, DupSweep reads the following <em>locally</em>:</p>
+    <ul>
+      <li>the folders you add to the scan list, and the names, sizes and
+      timestamps of the files in them;</li>
+      <li>file contents, to compute BLAKE3 hashes and compare candidate files
+      byte for byte.</li>
+    </ul>
+    <p>This processing happens entirely on your device. Scan results are held in
+    memory and are discarded when the application exits. Nothing is uploaded or
+    shared.</p>
+
+    <h2>4. Data stored on your device</h2>
+    <p>DupSweep keeps its settings in the Windows registry, per user, under
+    <code>HKEY_CURRENT_USER\Software\DupSweep</code>: the list of folders to
+    scan, the size range, the file type filter, the folders excluded from
+    scanning, which copy of a duplicate group to keep, how a click ticks a row,
+    and the chosen interface language.</p>
+    <p>It also writes a plain-text log under
+    <code>%LOCALAPPDATA%\DupSweep\logs</code> (one file per day). A log may
+    contain file and folder paths, file sizes, scan and deletion results, and
+    error messages, so that a problem can be diagnosed. Logs remain on your
+    device and are never sent to us. You can delete them at any time from
+    Help &gt; Open Log Folder, and uninstalling DupSweep removes its data
+    folder.</p>
+
+    <h2>5. File deletion</h2>
+    <p>DupSweep deletes only the files you select and confirm. Deletion is
+    carried out by Windows on your device. By default files go to the Recycle
+    Bin, where they can be restored. Permanent deletion is available only
+    through the dedicated Delete Permanently button or menu entry, asks for
+    confirmation twice, and cannot be undone.
+    No information about a deletion leaves your device.</p>
+
+    <h2>6. Network access</h2>
+    <p>DupSweep does not connect to any network. Its package requests no
+    internet, private-network or location capability; the only capability it
+    declares is <code>runFullTrust</code>, which Windows requires for a desktop
+    application that scans files with the user's own permissions. There is no
+    updater that contacts a server: updates are delivered by the Microsoft
+    Store.</p>
+
+    <h2>7. Third parties</h2>
+    <ul>
+      <li><strong>Microsoft Store.</strong> Distribution, updates and any
+      payment are handled by Microsoft under the
+      <a href="https://privacy.microsoft.com/privacystatement">Microsoft
+      Privacy Statement</a>. Microsoft may collect data about Store
+      transactions and downloads independently of DupSweep.</li>
+      <li><strong>BLAKE3.</strong> The hash implementation is compiled into the
+      application, runs locally, and collects nothing.</li>
+    </ul>
+    <p>We share no data with anyone, because we receive none.</p>
+
+    <h2>8. Children</h2>
+    <p>DupSweep collects no personal data from anyone, including children. The
+    application has no accounts, no communication features and no user-generated
+    content.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Because we hold no personal data about you, there is nothing for us to
+    access, correct, export or erase on your behalf. The data DupSweep stores
+    remains on your device and under your control: you can change it in the
+    application, remove the registry key, or delete the log folder.</p>
+    <p>If you contact us for support and choose to send a log file, you are
+    sharing that file with us voluntarily. We use it only to answer your
+    request and delete it when the request is closed.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published on this
+    page with a new date at the top. Material changes will also be described in
+    the release notes of the affected update.</p>
+
+    <h2>11. Contact</h2>
+    <p>For privacy questions about DupSweep, use the publisher contact details
+    shown on DupSweep's Microsoft Store product page.</p>
+  </article>
+
+  <!-- Simplified Chinese -->
+  <article data-lang="zh-CN" hidden>
+    <h1>DupSweep 隐私政策</h1>
+    <p class="meta">最后更新：2026 年 10 月 17 日 &middot; 发布者：stone.china</p>
+
+    <div class="summary">
+      <p><strong>简要说明：</strong>DupSweep 只在你自己的设备上查找重复文件。
+      它不收集、不传输、不出售、不共享任何个人数据，也不连接任何网络。</p>
+    </div>
+
+    <h2>1. 适用范围</h2>
+    <p>本政策适用于通过 Microsoft Store 发布的 DupSweep Windows 应用程序
+    （包括所有语言版本），以及该程序在你的设备上处理和存储的数据。本政策不
+    适用于由 Microsoft 运营的 Microsoft Store 本身。</p>
+
+    <h2>2. 我们不收集的数据</h2>
+    <ul>
+      <li>不收集遥测、分析、崩溃报告或使用统计。</li>
+      <li>不需要账户、登录、姓名、电子邮件地址或广告标识符。</li>
+      <li>不会向任何地方发送文件名、文件内容、文件哈希或文件夹名称。</li>
+      <li>不包含广告、跟踪或分析 SDK。</li>
+    </ul>
+    <p>我们不会从 DupSweep 收到任何数据，因此不持有你的个人数据。</p>
+
+    <h2>3. 在你的设备上处理的数据</h2>
+    <p>为了查找重复文件，DupSweep 会在<strong>本机</strong>读取：</p>
+    <ul>
+      <li>你添加到扫描列表的文件夹，以及其中文件的名称、大小和时间戳；</li>
+      <li>文件内容，用于计算 BLAKE3 哈希并逐字节比较候选文件。</li>
+    </ul>
+    <p>这些处理完全在你的设备上完成。扫描结果只保存在内存中，程序退出时即
+    丢弃。任何内容都不会被上传或共享。</p>
+
+    <h2>4. 在你的设备上存储的数据</h2>
+    <p>DupSweep 按用户将设置保存在 Windows 注册表的
+    <code>HKEY_CURRENT_USER\Software\DupSweep</code> 下：待扫描的文件夹列表、
+    大小范围、文件类型过滤、排除扫描的文件夹、重复组中保留哪一份、单击列表
+    时的勾选方式，以及界面语言。</p>
+    <p>程序还会在 <code>%LOCALAPPDATA%\DupSweep\logs</code> 下写入纯文本日志
+    （每天一个文件）。日志可能包含文件和文件夹路径、文件大小、扫描与删除结果
+    以及错误信息，用于诊断问题。日志始终留在你的设备上，绝不会发送给我们。
+    你可以随时通过“帮助 &gt; 打开日志文件夹”删除它们；卸载 DupSweep 会删除
+    其数据文件夹。</p>
+
+    <h2>5. 文件删除</h2>
+    <p>DupSweep 只删除你选择并确认的文件。删除操作由 Windows 在你的设备上
+    完成。默认情况下文件进入回收站，可以还原。永久删除只能通过专用的“永久删除”
+    按钮或菜单项执行，并需经过二次确认，且无法撤销。任何删除信息都不会离开你的设备。</p>
+
+    <h2>6. 网络访问</h2>
+    <p>DupSweep 不连接任何网络。程序包没有申请互联网、专用网络或位置权限；
+    它声明的唯一能力是 <code>runFullTrust</code>，这是 Windows 对以用户自身
+    权限扫描文件的桌面应用程序的要求。程序没有会联系服务器的更新器：更新由
+    Microsoft Store 提供。</p>
+
+    <h2>7. 第三方</h2>
+    <ul>
+      <li><strong>Microsoft Store。</strong>分发、更新以及可能发生的付款由
+      Microsoft 依据
+      <a href="https://privacy.microsoft.com/privacystatement">Microsoft
+      隐私声明</a>处理。Microsoft 可能独立于 DupSweep 收集商店交易和下载
+      相关的数据。</li>
+      <li><strong>BLAKE3。</strong>哈希实现直接编译在程序中，在本机运行，
+      不收集任何数据。</li>
+    </ul>
+    <p>我们不与任何人共享数据，因为我们不会收到任何数据。</p>
+
+    <h2>8. 儿童</h2>
+    <p>DupSweep 不收集任何人的个人数据，包括儿童。程序没有账户、没有通信功能，
+    也没有用户生成内容。</p>
+
+    <h2>9. 你的权利</h2>
+    <p>由于我们不持有你的个人数据，因此没有可供我们代为访问、更正、导出或
+    删除的数据。DupSweep 存储的数据始终留在你的设备上并由你控制：你可以在
+    程序中修改它、删除注册表项，或删除日志文件夹。</p>
+    <p>如果你就支持问题联系我们并选择发送日志文件，即表示你自愿与我们共享该
+    文件。我们仅将其用于回答你的请求，并在请求处理完毕后删除。</p>
+
+    <h2>10. 政策变更</h2>
+    <p>如果本政策发生变更，更新后的版本将发布在本页面，并在顶部标注新的日期。
+    重大变更还会在相应更新的发行说明中说明。</p>
+
+    <h2>11. 联系方式</h2>
+    <p>如有关于 DupSweep 的隐私问题，请使用 DupSweep 的 Microsoft Store
+    产品页上显示的发布者联系方式。</p>
+  </article>
+
+  <!-- Traditional Chinese -->
+  <article data-lang="zh-TW" hidden>
+    <h1>DupSweep 隱私權政策</h1>
+    <p class="meta">最後更新：2026 年 10 月 17 日 &middot; 發佈者：stone.china</p>
+
+    <div class="summary">
+      <p><strong>簡要說明：</strong>DupSweep 只在您自己的裝置上尋找重複檔案。
+      它不收集、不傳輸、不出售、不分享任何個人資料，也不連線任何網路。</p>
+    </div>
+
+    <h2>1. 適用範圍</h2>
+    <p>本政策適用於透過 Microsoft Store 發佈的 DupSweep Windows 應用程式
+    （包括所有語言版本），以及該程式在您的裝置上處理和儲存的資料。本政策不
+    適用於由 Microsoft 營運的 Microsoft Store 本身。</p>
+
+    <h2>2. 我們不收集的資料</h2>
+    <ul>
+      <li>不收集遙測、分析、當機報告或使用統計。</li>
+      <li>不需要帳戶、登入、姓名、電子郵件地址或廣告識別碼。</li>
+      <li>不會向任何地方傳送檔案名稱、檔案內容、檔案雜湊或資料夾名稱。</li>
+      <li>不包含廣告、追蹤或分析 SDK。</li>
+    </ul>
+    <p>我們不會從 DupSweep 收到任何資料，因此不持有您的個人資料。</p>
+
+    <h2>3. 在您的裝置上處理的資料</h2>
+    <p>為了尋找重複檔案，DupSweep 會在<strong>本機</strong>讀取：</p>
+    <ul>
+      <li>您新增到掃描清單的資料夾，以及其中檔案的名稱、大小和時間戳記；</li>
+      <li>檔案內容，用於計算 BLAKE3 雜湊並逐位元組比較候選檔案。</li>
+    </ul>
+    <p>這些處理完全在您的裝置上完成。掃描結果只保存在記憶體中，程式結束時即
+    捨棄。任何內容都不會被上傳或分享。</p>
+
+    <h2>4. 在您的裝置上儲存的資料</h2>
+    <p>DupSweep 依使用者將設定儲存在 Windows 登錄的
+    <code>HKEY_CURRENT_USER\Software\DupSweep</code> 下：待掃描的資料夾清單、
+    大小範圍、檔案類型篩選、排除掃描的資料夾、重複群組中保留哪一份、按一下
+    清單時的勾選方式，以及介面語言。</p>
+    <p>程式也會在 <code>%LOCALAPPDATA%\DupSweep\logs</code> 下寫入純文字記錄
+    （每天一個檔案）。記錄可能包含檔案和資料夾路徑、檔案大小、掃描與刪除結果
+    以及錯誤訊息，用於診斷問題。記錄始終留在您的裝置上，絕不會傳送給我們。
+    您可以隨時透過「說明 &gt; 開啟記錄資料夾」刪除它們；解除安裝 DupSweep
+    會刪除其資料資料夾。</p>
+
+    <h2>5. 檔案刪除</h2>
+    <p>DupSweep 只刪除您選擇並確認的檔案。刪除作業由 Windows 在您的裝置上
+    完成。預設情況下檔案會移至資源回收筒，可以還原。永久刪除只能透過專用的
+    「永久刪除」按鈕或功能表項目執行，並需經過二次確認，且無法復原。
+    任何刪除資訊都不會離開您的裝置。</p>
+
+    <h2>6. 網路存取</h2>
+    <p>DupSweep 不連線任何網路。程式套件沒有申請網際網路、私人網路或位置
+    權限；它宣告的唯一能力是 <code>runFullTrust</code>，這是 Windows 對以
+    使用者自身權限掃描檔案的桌面應用程式的要求。程式沒有會聯絡伺服器的更新
+    程式：更新由 Microsoft Store 提供。</p>
+
+    <h2>7. 第三方</h2>
+    <ul>
+      <li><strong>Microsoft Store。</strong>發佈、更新以及可能發生的付款由
+      Microsoft 依
+      <a href="https://privacy.microsoft.com/privacystatement">Microsoft
+      隱私權聲明</a>處理。Microsoft 可能獨立於 DupSweep 收集商店交易和
+      下載相關的資料。</li>
+      <li><strong>BLAKE3。</strong>雜湊實作直接編譯在程式中，在本機執行，
+      不收集任何資料。</li>
+    </ul>
+    <p>我們不與任何人分享資料，因為我們不會收到任何資料。</p>
+
+    <h2>8. 兒童</h2>
+    <p>DupSweep 不收集任何人的個人資料，包括兒童。程式沒有帳戶、沒有通訊
+    功能，也沒有使用者產生的內容。</p>
+
+    <h2>9. 您的權利</h2>
+    <p>由於我們不持有您的個人資料，因此沒有可供我們代為存取、更正、匯出或
+    刪除的資料。DupSweep 儲存的資料始終留在您的裝置上並由您控制：您可以在
+    程式中修改它、刪除登錄機碼，或刪除記錄資料夾。</p>
+    <p>如果您就支援問題聯絡我們並選擇傳送記錄檔，即表示您自願與我們分享該
+    檔案。我們僅將其用於回覆您的請求，並在請求處理完畢後刪除。</p>
+
+    <h2>10. 政策變更</h2>
+    <p>如果本政策發生變更，更新後的版本將發佈在本頁面，並在頂部標註新的日期。
+    重大變更也會在相應更新的版本說明中說明。</p>
+
+    <h2>11. 聯絡方式</h2>
+    <p>如有關於 DupSweep 的隱私權問題，請使用 DupSweep 的 Microsoft Store
+    產品頁上顯示的發佈者聯絡方式。</p>
+  </article>
+
+  <footer>
+    <p>DupSweep &middot; stone.china &middot; This page is self-contained and
+    loads no external resources.</p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var sections = document.querySelectorAll('article[data-lang]');
+  var buttons = document.querySelectorAll('nav.langs button');
+
+  function show(lang) {
+    var known = false;
+    for (var i = 0; i < sections.length; i++) {
+      if (sections[i].getAttribute('data-lang') === lang) {
+        known = true;
+      }
+    }
+    if (!known) {
+      lang = 'en';
+    }
+    for (var j = 0; j < sections.length; j++) {
+      sections[j].hidden = sections[j].getAttribute('data-lang') !== lang;
+    }
+    for (var k = 0; k < buttons.length; k++) {
+      buttons[k].setAttribute('aria-pressed',
+        buttons[k].getAttribute('data-lang') === lang ? 'true' : 'false');
+    }
+    document.documentElement.lang = lang;
+  }
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function () {
+      show(this.getAttribute('data-lang'));
+    });
+  }
+
+  var nav = (navigator.language || 'en').toLowerCase();
+  if (nav.indexOf('zh') === 0) {
+    show((nav.indexOf('tw') >= 0 || nav.indexOf('hk') >= 0 ||
+          nav.indexOf('mo') >= 0) ? 'zh-TW' : 'zh-CN');
+  } else {
+    show('en');
+  }
+})();
+</script>
+</body>
+</html>
